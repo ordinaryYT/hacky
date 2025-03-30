@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Fortnite Hack Simulator (JOKE)</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff00;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: #111;
+            border: 1px dashed #00ff00;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #ff5555;
+            text-shadow: 0 0 5px #ff0000;
+        }
+        .hack-btn {
+            background: #222;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .hack-btn:hover {
+            background: #333;
+        }
+        .log {
+            background: #000;
+            border: 1px solid #333;
+            height: 200px;
+            overflow-y: auto;
+            text-align: left;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .log p {
+            margin: 5px 0;
+            color: #00ff88;
+        }
+        .warning {
+            color: #ff5555;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 FAKE Fortnite Hack Simulator 🚀</h1>
+        <p class="warning">(THIS IS A JOKE - DOES NOTHING REAL!)</p>
+        
+        <div class="hacks">
+            <button class="hack-btn" onclick="fakeHack('aimbot')">🔫 Enable "Aimbot"</button>
+            <button class="hack-btn" onclick="fakeHack('wallhack')">👁️ Enable "Wallhack"</button>
+            <button class="hack-btn" onclick="fakeHack('speed')">⚡ Enable "Speed Hack"</button>
+            <button class="hack-btn" onclick="fakeHack('fly')">🦅 Enable "Fly Hack"</button>
+            <button class="hack-btn" onclick="fakeHack('v-bucks')">💰 "Generate V-Bucks"</button>
+        </div>
+        
+        <div class="log" id="hackLog">
+            <p>> System: Fake hack tool loaded. No real cheats here!</p>
+        </div>
+    </div>
+
+    <script>
+        function fakeHack(hackType) {
+            const log = document.getElementById('hackLog');
+            const messages = {
+                aimbot: [
+                    "> Loading FAKE aimbot...",
+                    "> Calculating fake bullet trajectories...",
+                    "> ERROR: Just kidding, no real aimbot!",
+                    "> You've been pranked! 🤪"
+                ],
+                wallhack: [
+                    "> Initializing fake wallhack...",
+                    "> Rendering imaginary enemy outlines...",
+                    "> WARNING: These walls are still solid!",
+                    "> Prank successful! 😆"
+                ],
+                speed: [
+                    "> Injecting placebo speed boost...",
+                    "> Your brain now thinks you're faster!",
+                    "> (You're not actually moving quicker)",
+                    "> Gotcha! 🏃‍♂️💨"
+                ],
+                fly: [
+                    "> Activating fake flight mode...",
+                    "> Flapping arms vigorously...",
+                    "> Gravity says: 'Nice try!'",
+                    "> Epic prank! 🦅"
+                ],
+                'v-bucks': [
+                    "> Generating imaginary V-Bucks...",
+                    "> Balance: ∞ (in your dreams)",
+                    "> Transaction failed: Reality check!",
+                    "> Haha, nice try! 😂"
+                ]
+            };
+
+            log.innerHTML += `<p>> Attempting to enable ${hackType}...</p>`;
+            
+            messages[hackType].forEach((msg, i) => {
+                setTimeout(() => {
+                    log.innerHTML += `<p>${msg}</p>`;
+                    log.scrollTop = log.scrollHeight;
+                }, i * 800);
+            });
+        }
+    </script>
+</body>
+</html>
